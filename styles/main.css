@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+header {
+
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+
+}
+
+.logo {
+
+    width: 70px;
+
+
+
+
+}
+
+.menu {
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-size: 20px;
+
+}
+
+.linksNav {
+
+    font-family: 'Quicksand', sans-serif;
+    line-height: 40px;
+    text-decoration: none;
+    color: #B688FF;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+.linksNav:hover {
+
+    color: darkturquoise;
+    text-shadow: 3px 3px 4px darkturquoise;
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+
+
+}
+
+.line1 {
+
+    width: 100%;
+
+
+}
+
+.experience {
+    margin-top: -2px;
+    width: 100%;
+    height: 515px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url("./../data/background1.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+
+}
+
+.brandname {
+
+    font-family: 'Qwigley', cursive;
+
+    font-size: 100px;
+    font-weight: 100;
+    color: ghostwhite;
+
+}
+
+.brandDesc {
+
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    width: 30%;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: justify;
+    text-align-last: center;
+
+
+}
+
+.brandDesc2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Economica', sans-serif;
+
+    color: #178E85;
+    width: 25%;
+    font-size: 42px;
+    text-align: center;
+
+
+}
+
+.btn {
+
+
+    background-color: #A01866;
+    font-size: 32px;
+    width: 120px;
+    height: 50px;
+    border-radius: 0.9px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+
+}
+
+.btn:hover {
+
+    background-color: rgb(189, 37, 123);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 0 2px 6px rgb(189, 37, 123);
+}
+
+.about {
+    width: 100%;
+    height: 654px;
+    display: flex;
+
+
+}
+
+.aboutLeft {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #2F266E;
+
+}
+
+.aboutLeft>.brandname {
+
+    color: #DEFFFC;
+
+}
+
+.aboutLeft>.brandDesc {
+
+    width: 60%;
+    text-align-last: left;
+}
+
+.aboutRight {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    background-color: #111435;
+    font-size: 45px;
+ 
+ 
+    justify-content: center;
+
+
+}
+
+.aboutRight>h1 {
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 60px;
+    color: #302272;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+
+
+
+}
+.aboutRight>h1:nth-child(2n) {
+ /*   outline-color: white;
+    color: #fdfdfd;
+    */
+
+    color: #111435;
+    text-shadow:
+     -1px -1px 0 rgb(219, 219, 219),  
+      1px -1px 0 rgb(219, 219, 219),
+      -1px 1px 0 rgb(219, 219, 219),
+       1px 1px 0 rgb(219, 219, 219);
+
+
+}
+
+.icebaby {
+
+    position: absolute;
+    width: 400px;
+    left: -140px;
+    top: 1180px;
+
+
+
+}
