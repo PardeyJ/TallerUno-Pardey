@@ -420,11 +420,12 @@ header {
     font-size: 40px;
     align-items: left;
     justify-content: center;
-    line-height: 45px;
+    line-height: 50px;
     font-weight: 1000;
     letter-spacing: 10px;
-    width: 40%;
+    width: 50%;
     font-family: 'Roboto', sans-serif;
+    padding: 20px;
 }
 
 .adleft>h1 {
@@ -442,6 +443,30 @@ header {
         2px -2px 0#A01866,
         -2px 2px 0 #A01866,
         2px 2px 0 #A01866;
+}
+
+.adleft>h1:nth-child(2),
+.adleft>h1:nth-child(8) {
+
+    color: #A01866;
+}
+
+.adleft>h1:nth-child(4),
+.adleft>h1:nth-child(6),
+.adleft>h1:nth-child(10),
+.adleft>h1:nth-child(12) {
+    color: black;
+    text-shadow:
+        -2px -2px 0 #528D84,
+        2px -2px 0#528D84,
+        -2px 2px 0 #528D84,
+        2px 2px 0 #528D84;
+}
+
+.adleft>h1:nth-child(5),
+.adleft>h1:nth-child(11) {
+
+    color: #528D84;
 }
 
 .adright {
@@ -479,6 +504,13 @@ header {
 
 }
 
+.adright>.btn:hover {
+
+    box-shadow: 0 0 2px 6px #178D84;
+}
+
+
+
 .cocktailName {
     font-size: 100px;
     font-weight: 100;
@@ -493,4 +525,74 @@ header {
         3px -3px 0 #85F6E8,
         -3px 3px 0 #85F6E8,
         3px 3px 0 #85F6E8;
+}
+
+.catalog {
+
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 190px;
+    background-color: #851C62;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Qwigley', cursive;
+    font-size: 30px;
+    font-weight: 100;
+
+
+}
+
+.catalog>div {
+
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.generator{
+
+
+    background-color: #C3841F;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Qwigley', cursive;
+    font-size: 30px;
+    font-weight: 100;
+
+
+}
+
+.generator>div {
+
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.cocktailgenerator {
+
+
+background-image: url(./../data/mojito.png);
+width: 100%;
+height: 700px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+
+
+
 }
