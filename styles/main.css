@@ -75,7 +75,7 @@ header {
 .experience {
     margin-top: -2px;
     width: 100%;
-    height: 515px;
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -93,7 +93,7 @@ header {
 .brandname {
 
     font-family: 'Qwigley', cursive;
-
+    transition: font-size 0.5s ease-in-out;
     font-size: 100px;
     font-weight: 100;
     color: ghostwhite;
@@ -109,6 +109,7 @@ header {
     font-size: 22px;
     text-align: justify;
     text-align-last: center;
+    transition: font-size 0.5s ease-in-out, width 0.5s ease-in-out;
 
 
 }
@@ -117,7 +118,7 @@ header {
     margin-top: 20px;
     margin-bottom: 30px;
     font-family: 'Economica', sans-serif;
-
+    transition: font-size 0.5s ease-in-out, width 0.5s ease-in-out;
     color: rgb(33, 156, 146);
     width: 25%;
     font-size: 42px;
@@ -147,7 +148,7 @@ header {
     font-family: 'Economica', sans-serif;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, font-size 0.5s ease-in-out;
 
 
 }
@@ -163,7 +164,7 @@ header {
     width: 100%;
     height: 654px;
     display: flex;
-
+    transition: height 0.5s ease-in-out;
 
 }
 
@@ -175,7 +176,7 @@ header {
     align-items: center;
     width: 50%;
     background-color: #2F266E;
-
+    transition: width 0.5s ease-in-out;
 }
 
 .aboutLeft>.brandname {
@@ -186,7 +187,9 @@ header {
 
 .aboutLeft>.brandDesc {
 
-    width: 60%;
+    width: 70%;
+    font-size: 20px;
+    transition: width 0.5s ease-in-out;
     text-align-last: left;
 }
 
@@ -212,8 +215,7 @@ header {
     color: #302272;
     font-family: 'Roboto', sans-serif;
     margin-top: 30px;
-
-
+    transition: font-size 0.5s ease-in-out, line-height 0.6s ease-in-out;
 
 }
 
@@ -235,9 +237,9 @@ header {
 .icebaby {
 
     position: absolute;
-    width: 400px;
+    width: 320px;
     left: -140px;
-    top: 1180px;
+    top: 1280px;
 
 
 
@@ -246,9 +248,9 @@ header {
 .icebaby2 {
 
     position: absolute;
-    width: 200px;
+    width: 120px;
     right: 0;
-    top: 500px;
+    top: 600px;
 
 }
 
@@ -471,7 +473,7 @@ header {
 
 .adright {
 
-    width: 60%;
+    width: 50%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -555,7 +557,7 @@ header {
 
 }
 
-.generator{
+.generator {
 
 
     background-color: #C3841F;
@@ -585,74 +587,124 @@ header {
 
 .cocktailgenerator {
 
+    background-blend-mode: darken;
+    transition: background-image 1s ease-in-out;
+    background-image: url(./../data/mojito1.png);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-background-image: url(./../data/mojito.png);
-width: 100%;
-height: 700px;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    justify-content: space-around;
+    padding-bottom: 30px;
+
+}
+
+.Name {
+    transition: opacity 0.5s ease-in-out;
+    font-family: 'Qwigley', cursive;
+    margin-top: 250px;
+    font-size: 140px;
+    font-weight: 100;
+    color: ghostwhite;
+}
+
+.cocktailgenerator>div {
+    display: flex;
+    margin-top: 250px;
+    width: 30%;
+    justify-content: space-evenly;
 
 
 }
 
-.newsletter{
+.bullet {
 
-display: flex;
-flex-direction: row;
-width: 100%;
-background-color: #5900D0;
-height: 150px;
-justify-content: center;
-align-items: center;
-font-size: 20px;
+    border-radius: 50%;
+    background-color: #85F6E8;
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+}
+
+.bullet:hover {
+
+    width: 25px;
+    height: 25px;
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+}
+
+
+
+
+.newsletter {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #5900D0;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 
 }
 
-.newsletter>div{
+.newsletter>div {
 
     font-family: 'Economica', sans-serif;
-    color:white;
+    color: white;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    
-
-}
-input[type=email]{
-
-width:500px;
-height: 30px;
-font-family: 'Economica', sans-serif;
-box-sizing: border-box;
-border: 2px solid rgb(214, 210, 226);
-background-color: #5900D0;
-font-size: 25px;
-padding: 5px 10px 5px 20px;
-margin-top: 10px;
-margin-bottom: 10px;
 
 
 }
 
-.footer{
+input[type=email] {
+
+    width: 500px;
+    height: 40px;
+    font-family: 'Economica', sans-serif;
+    box-sizing: border-box;
+    border: 2px solid rgb(214, 210, 226);
+    background-color: #5900D0;
+    font-size: 25px;
+    padding: 5px 10px 5px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+input::placeholder {
+    color: white;
+}
 
 
-background-color: black;
-width:100%;
-height: 240px;
+.footer {
+
+
+    background-color: black;
+    width: 100%;
+    height: 240px;
 
 
 
 }
 
-.footer>div{
+.footer>div {
 
 
-   
+
     display: flex;
     flex-direction: row;
     padding-top: 90px;
@@ -663,7 +715,130 @@ height: 240px;
 
 }
 
+@media (max-width: 1300px) {
 
-    
 
+    .brandname {
+
+        transition: font-size 0.5s ease-in-out;
+        font-size: 80px;
+    }
+
+    .brandDesc {
+        transition: font-size 0.5s ease-in-out, width 0.5s ease-in-out;
+        font-size: 15px;
+        width: 70%;
+
+    }
+
+    .brandDesc2 {
+        transition: font-size 0.5s ease-in-out, width 0.5s ease-in-out;
+        width: 60%;
+        font-size: 30px;
+
+
+
+    }
+
+    .btn {
+        transition: font-size 0.5s ease-in-out;
+        font-size: 25px;
+    }
+
+    .aboutLeft>.brandDesc {
+
+        width: 80%;
+        transition: width 0.5s ease-in-out;
+
+    }
+
+    .aboutRight>h1 {
+        font-size: 45px;
+        line-height: 40px;
+        transition: font-size 0.5s ease-in-out, line-height 0.6s ease-in-out;
+
+    }
+
+    .icebaby {
+
+
+        width: 250px;
+        left: -100px;
+        top: 1150px;
+
+
+
+    }
+
+    .icebaby2 {
+
+
+        width: 120px;
+        right: 20;
+        top: 480px;
+
+    }
+
+
+
+
+}
+
+
+@media (max-width: 750px) {
+
+    .aboutRight {
+        display: none;
+    }
+
+    .brandDesc2 {
+        transition: font-size 0.5s ease-in-out, width 0.5s ease-in-out;
+        width: 80%;
+        font-size: 25px;
+
+    }
+
+    .aboutLeft {
+        width: 100%;
+
+        transition: width 0.5s ease-in-out;
+    }
+
+    .about {
+        height: 400px;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .icebaby {
+
+        display: none;
+
+    }
+
+
+
+    .icebaby2 {
+        display: none;
+    }
+
+    .proposal {
+        flex-direction: column;
+    }
+
+    .proposal>div {
+
+        width: 89%;
+        height: 180px;
+    }
+
+    .proposal>div>h1 {
+
+        font-size: 30px;
+    }
+
+
+    .proposal>div>p {
+
+        font-size: 15px;
+    }
 }
