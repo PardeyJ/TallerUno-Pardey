@@ -596,3 +596,74 @@ background-position: center center;
 
 
 }
+
+.newsletter{
+
+display: flex;
+flex-direction: row;
+width: 100%;
+background-color: #5900D0;
+height: 150px;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+
+}
+
+.newsletter>div{
+
+    font-family: 'Economica', sans-serif;
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
+input[type=email]{
+
+width:500px;
+height: 30px;
+font-family: 'Economica', sans-serif;
+box-sizing: border-box;
+border: 2px solid rgb(214, 210, 226);
+background-color: #5900D0;
+font-size: 25px;
+padding: 5px 10px 5px 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+}
+
+.footer{
+
+
+background-color: black;
+width:100%;
+height: 240px;
+
+
+
+}
+
+.footer>div{
+
+
+   
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+
+
+}
+
+
+    
+
+}
